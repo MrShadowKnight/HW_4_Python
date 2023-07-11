@@ -4,29 +4,29 @@ number1 = int(input("Vvedit pochatkove chyslo: "))
 number2 = int(input("Vvedit kinceve chyslo: "))
 
 for i in range(number1, number2 + 1):
-    if i % 7 == 0:
+    if i % 7 == 0:          # виконуємо ділення без остачі і виводимо результат читсла які діляться націло
         print(i)
 
 # TASK №2
 
 number3 = int(input("Vvedit pochatkove chyslo: "))
 number4 = int(input("Vvedit kinceve chyslo: "))
-count = 0
-kratni = []
-min_max = []
-max_min = []
+count = 0                   # Додаємо лічильник кратних на 5
+kratni = []                 # Додаємо список кратних на 7
+min_max = []                # Додаємо список діапазону від меншого до більшого
+max_min = []                # Додаємо список діапазону від більшого до меншого
 
 for a in range(number4, number3 - 1, -1):
-    max_min.append(a)
+    max_min.append(a)       # Вносимо в список діапазону від більшого до меншого
 
 for i in range(number3, number4 + 1):
-    min_max.append(i)
+    min_max.append(i)       # Вносимо в список діапазону від меншого до більшого
     if i % 7 == 0:
-        kratni.append(i)
+        kratni.append(i)    # Вносимо в список кратних на 7
     elif i % 5 == 0:
-        count += 1
+        count += 1          # Нараховуємо в лічильник
 
-print("chysla diapasonu vid menshogo: ", min_max)
+print("chysla diapasonu vid menshogo: ", min_max)          # І все виводимо
 print("chysla diapasonu vid bilshogo: ", max_min)
 print("Vsi kratni 7: ", kratni)
 print("Kilkist kratnyh 5: ", count)
@@ -35,19 +35,19 @@ print("Kilkist kratnyh 5: ", count)
 
 number5 = int(input("Vvedit pochatkove chyslo: "))
 number6 = int(input("Vvedit kinceve chyslo: "))
-diapason = []
+diapason = []               # Додаємо список діапазону
 
 for i in range(number5, number6 + 1):
     if i % 3 == 0 and i % 5 == 0:
-        i = "Fizz Buzz"
+        i = "Fizz Buzz"     # Запіняємо елемент який кратний, і 3, і 5, і додаємо в діапазон
         diapason.append(i)
     elif i % 3 == 0:
-        i = "Fizz"
+        i = "Fizz"          # Запіняємо елемент який кратний 3, і додаємо в діапазон
         diapason.append(i)
     elif i % 5 == 0:
-        i = "Buzz"
+        i = "Buzz"          # Запіняємо елемент який кратний 5, і додаємо в діапазон
         diapason.append(i)
     else:
-        diapason.append(i)
+        diapason.append(i)  # Додаємо елемент до діапазону
 
-print(diapason)
+print(diapason)             # Ввиводимо діапазон
