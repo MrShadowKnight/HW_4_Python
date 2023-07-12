@@ -1,7 +1,7 @@
 # TASK №1
 
-number1 = int(input("Vvedit pochatkove chyslo: "))
-number2 = int(input("Vvedit kinceve chyslo: "))
+number1 = int(input("Введіть початкове число: "))
+number2 = int(input("Введіть кінцеіе число: "))
 list_diapasonu = []
 
 for i in range(number1, number2 + 1):
@@ -11,8 +11,8 @@ print(list_diapasonu)
 
 # TASK №2
 
-number3 = int(input("Vvedit pochatkove chyslo: "))
-number4 = int(input("Vvedit kinceve chyslo: "))
+number3 = int(input("Введіть пперше число: "))
+number4 = int(input("Введіть друге число: "))
 count = 0                   # Додаємо лічильник кратних на 5
 kratni = []                 # Додаємо список кратних на 7
 min_max = []                # Додаємо список діапазону від меншого до більшого
@@ -35,8 +35,8 @@ print("Kilkist kratnyh 5: ", count)
 
 # TASK №3
 
-number5 = int(input("Vvedit pochatkove chyslo: "))
-number6 = int(input("Vvedit kinceve chyslo: "))
+number5 = int(input("Введіть початкове число: "))
+number6 = int(input("Введіть кінцеіе число: "))
 diapason = []               # Додаємо список діапазону
 
 for i in range(number5, number6 + 1):
