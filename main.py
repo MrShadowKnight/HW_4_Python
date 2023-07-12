@@ -2,10 +2,12 @@
 
 number1 = int(input("Vvedit pochatkove chyslo: "))
 number2 = int(input("Vvedit kinceve chyslo: "))
+list_diapasonu = []
 
 for i in range(number1, number2 + 1):
     if i % 7 == 0:          # виконуємо ділення без остачі і виводимо результат читсла які діляться націло
-        print(i)
+        list_diapasonu.append(i)
+print(list_diapasonu)
 
 # TASK №2
 
